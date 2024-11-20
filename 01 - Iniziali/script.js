@@ -5,25 +5,28 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-let newarray = [];
 
-function arrayiniziali(){ 
-   let initials;   
-   for(i = 0; i < names.length; i++){
-      initials = names[i].at(0);
-      newarray.push(initials)
-   }
+function arrayiniziali(arrayCompleto){ 
+  let newarray = [];
 
-   return newarray;
-  
-  
+  let initials;   
+  for(i = 0; i < arrayCompleto.length; i++){
+     initials = arrayCompleto[i].at(0);
+     newarray.push(initials)
+  }
+
+  return newarray;
+
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
- 
+console.log(arrayiniziali(names));
 
- console.log(arrayiniziali(newarray));
+
+
+//  console.log(arrayiniziali(newarray));
+
 
  
  
