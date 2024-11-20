@@ -11,6 +11,15 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 
 
+
+ function saluto(utente){
+  const data = new Date("July 21, 1983 01:15:00");
+  let hour = data.getHours();
+   let salutocompleto = `Ciao ${utente}`;
+   if(hour >= 13)
+  return salutocompleto
+ }
+
 // Invoca la funzione qui e stampa il risultato in console
 
 
