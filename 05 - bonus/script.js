@@ -17,11 +17,17 @@ const name = 'Mario';
   let hour = data.getHours();
    let salutocompleto = `Ciao ${utente}`;
    if(hour >= 13)
+    salutocompleto = `Buongiorno ${utente}`
+  else if(hour >= 17)
+    salutocompleto = `Buon pomeriggio ${utente}`
+  else
+    salutocompleto = `Buonasera ${utente}`
   return salutocompleto
  }
 
 // Invoca la funzione qui e stampa il risultato in console
 
+console.log(saluto(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
